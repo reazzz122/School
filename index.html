@@ -1,94 +1,82 @@
-<h1>About Me</h1>
+<!DOCTYPE html>
 
-<p>
-I'm Tebogo, a first-year BSc IT student focused on cybersecurity, software development, and building scalable digital businesses.
-</p>
-
-<p>
-I’m currently improving my coding skills, building real-world projects, and working toward becoming financially independent through tech.
-</p>
-
-<h2>My Weekly Timetable</h2>
-
-<table>
-  <tr>
-    <th>Day</th>
-    <th>8:30</th>
-    <th>9:30</th>
-    <th>10:30</th>
-    <th>11:30</th>
-    <th>13:30</th>
-    <th>14:30</th>
-  </tr>
-
-  <tr>
-    <td>Mon</td>
-    <td class="green">Networks</td>
-    <td class="brown">PRO Prac</td>
-    <td class="brown">PRO Prac</td>
-    <td>Math</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Tue</td>
-    <td>Math</td>
-    <td>Math</td>
-    <td class="green">Networks</td>
-    <td class="blue">WebTech</td>
-    <td class="yellow">INS Prac</td>
-    <td class="yellow">INS Prac</td>
-  </tr>
-
-  <tr>
-    <td>Wed</td>
-    <td class="yellow">INS Theory</td>
-    <td>Math</td>
-    <td></td>
-    <td class="blue">WebTech</td>
-    <td class="brown">PRO</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Thu</td>
-    <td class="green">Networks</td>
-    <td class="yellow">INS Theory</td>
-    <td class="blue">WebTech Prac</td>
-    <td class="blue">WebTech Prac</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Fri</td>
-    <td class="brown">PRO</td>
-    <td class="green">Networks</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
-  <tr>
-    <td>Thu</td>
-    <td class="green">Networks</td>
-    <td class="yellow">INS Theory</td>
-    <td class="blue">WebTech Prac</td>
-    <td class="blue">WebTech Prac</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Fri</td>
-    <td class="brown">PRO</td>
-    <td class="green">Networks</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebogo | Future Cyber Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#0d0f2b; --royal:#1a008c; --electric:#4f46e5; --accent:#00e5ff; --muted:#8892b0; --white:#ffffff; }
+    html { scroll-behavior: smooth; }
+    body { font-family:'DM Sans',sans-serif; background:var(--navy); color:var(--white); min-height:100vh; }
+    nav { position:sticky; top:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.1rem 2.5rem; background:rgba(13,15,43,0.88); backdrop-filter:blur(14px); border-bottom:1px solid rgba(79,70,229,0.2); }
+    .logo { font-family:'Syne',sans-serif; font-weight:800; font-size:1.25rem; color:var(--accent); text-decoration:none; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; position:relative; }
+    .nav-links a::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent); transition:width 0.25s ease; }
+    .nav-links a:hover { color:var(--white); }
+    .nav-links a:hover::after, .nav-links a.active::after { width:100%; }
+    .nav-links a.active { color:var(--white); }
+    .hero { min-height:calc(100vh - 65px); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:4rem 2rem; position:relative; overflow:hidden; }
+    .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(79,70,229,0.25) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 80% 80%,rgba(0,229,255,0.08) 0%,transparent 60%); pointer-events:none; }
+    .hero-eyebrow { font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:1.2rem; font-weight:500; opacity:0; animation:fadeUp 0.7s 0.1s forwards; }
+    .hero h1 { font-family:'Syne',sans-serif; font-size:clamp(2.8rem,7vw,5rem); font-weight:800; line-height:1.05; letter-spacing:-1.5px; margin-bottom:1.4rem; opacity:0; animation:fadeUp 0.7s 0.25s forwards; }
+    .hero h1 span { background:linear-gradient(135deg,var(--electric),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hero p { max-width:500px; color:var(--muted); font-size:1.05rem; line-height:1.7; margin-bottom:2.4rem; opacity:0; animation:fadeUp 0.7s 0.4s forwards; }
+    .btn-group { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; opacity:0; animation:fadeUp 0.7s 0.55s forwards; }
+    .btn { padding:0.75rem 1.8rem; border-radius:6px; font-size:0.9rem; font-weight:600; cursor:pointer; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; font-family:'DM Sans',sans-serif; }
+    .btn:hover { transform:translateY(-2px); }
+    .btn-primary { background:var(--electric); color:var(--white); border:none; box-shadow:0 4px 20px rgba(79,70,229,0.4); }
+    .btn-primary:hover { box-shadow:0 6px 28px rgba(79,70,229,0.6); }
+    .btn-outline { background:transparent; color:var(--white); border:1.5px solid rgba(255,255,255,0.2); }
+    .btn-outline:hover { border-color:var(--accent); color:var(--accent); }
+    .section { padding:5rem 2rem; max-width:1000px; margin:0 auto; }
+    .section-label { font-size:0.75rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem; }
+    .section h2 { font-family:'Syne',sans-serif; font-size:clamp(1.8rem,4vw,2.5rem); font-weight:700; margin-bottom:2.5rem; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2rem; }
+    .card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.8rem; transition:transform 0.25s,border-color 0.25s,box-shadow 0.25s; }
+    .card:hover { transform:translateY(-4px); border-color:rgba(79,70,229,0.4); box-shadow:0 8px 30px rgba(79,70,229,0.15); }
+    .card-icon { font-size:1.8rem; margin-bottom:0.8rem; }
+    .card h3 { font-family:'Syne',sans-serif; font-size:1.05rem; font-weight:700; margin-bottom:0.5rem; }
+    .card p { font-size:0.88rem; color:var(--muted); line-height:1.65; }
+    footer { border-top:1px solid rgba(255,255,255,0.07); text-align:center; padding:2rem; font-size:0.82rem; color:var(--muted); }
+    footer a { color:var(--accent); text-decoration:none; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">TvR</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <p class="hero-eyebrow">BSc IT · Cybersecurity · Software Dev</p>
+    <h1>Hi, I'm <span>Tebogo</span>.<br>Building the future.</h1>
+    <p>First-year IT student focused on cybersecurity, software development, and building scalable digital businesses. Turning code into opportunity.</p>
+    <div class="btn-group">
+      <a href="about.html" class="btn btn-primary">Learn More</a>
+      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </section>
+  <div style="border-top:1px solid rgba(255,255,255,0.06)">
+    <div class="section">
+      <p class="section-label">What I'm About</p>
+      <h2>My Focus Areas</h2>
+      <div class="cards">
+        <div class="card"><div class="card-icon">🔒</div><h3>Cybersecurity</h3><p>Learning to protect systems and networks. Studying threats, vulnerabilities, and how to defend against them.</p></div>
+        <div class="card"><div class="card-icon">💻</div><h3>Software Dev</h3><p>Building real-world projects through code. Sharpening skills daily with HTML, CSS, and beyond.</p></div>
+        <div class="card"><div class="card-icon">📡</div><h3>Networking</h3><p>Understanding how systems communicate. From protocols to infrastructure — the backbone of the internet.</p></div>
+        <div class="card"><div class="card-icon">🚀</div><h3>Digital Business</h3><p>Working toward financial independence through tech. Building scalable products and services.</p></div>
+      </div>
+    </div>
+  </div>
+  <footer><p>© 2026 <a href="index.html">Tebogo van Rooyen</a> — Built with HTML &amp; CSS</p></footer>
+</body>
+</html>
