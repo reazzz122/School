@@ -1,238 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tebogo | Future Cybersecurity Expert</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Georgia, serif;
-      font-size: 16px;
-      color: #111;
-    }
-
-    header {
-      background-color: #1a008c;
-      color: #ffffff;
-      text-align: center;
-      padding: 30px 20px 15px;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
-
-    nav {
-      background-color: #1a008c;
-      text-align: center;
-      padding-bottom: 18px;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin: 0 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    #hero {
-      background-color: #add8e6;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    #learn-more {
-      display: inline-block;
-      background-color: #1a008c;
-      color: #ffffff;
-      padding: 10px 24px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    #learn-more:hover {
-      background-color: #ff6600;
-      transform: scale(1.05);
-    }
-
-    #about {
-      padding: 40px 30px;
-    }
-
-    #about p {
-      color: #5a3e8a;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      font-size: 0.85rem;
-    }
-
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #1a008c;
-      color: white;
-    }
-
-    .green { background-color: #8bc34a; }
-    .yellow { background-color: #ffc107; }
-    .blue { background-color: #64b5f6; }
-    .brown { background-color: #a0522d; color: white; }
-
-    #contact {
-      padding: 40px 30px;
-      background-color: #f4f4f4;
-    }
-
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Tebogo | Tech Journey</h1>
-</header>
-
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="hero">
-  <h1>Welcome to My Website</h1>
-  <p>Building skills in coding, cybersecurity, and digital business.</p>
-
-  <a href="#about">
-    <span id="learn-more">Learn More</span>
-  </a>
-</section>
-
 <section id="about">
   <h1>About Me</h1>
 
   <p>
-    I'm Tebogo, a first-year BSc IT student with a strong focus on cybersecurity,
+    I'm Tebogo, a first-year BSc IT student focused on cybersecurity,
     software development, and building scalable digital businesses.
-    I'm currently developing projects, learning programming, and working toward
-    becoming financially independent through tech.
   </p>
 
   <p>
-    This website is part of my journey — showcasing my growth, discipline,
-    and consistency in mastering technology.
+    I’m currently improving my coding skills, building real-world projects,
+    and working toward becoming financially independent through tech.
   </p>
 
-  <h2>My Weekly Timetable</h2>
+  <!-- TIMETABLE SECTION (ONLY HERE) -->
+  <section id="timetable">
+    <h2>My Weekly Timetable</h2>
 
-  <table>
-    <tr>
-      <th>Day</th>
-      <th>8:30</th>
-      <th>9:30</th>
-      <th>10:30</th>
-      <th>11:30</th>
-      <th>13:30</th>
-      <th>14:30</th>
-    </tr>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>8:30</th>
+        <th>9:30</th>
+        <th>10:30</th>
+        <th>11:30</th>
+        <th>13:30</th>
+        <th>14:30</th>
+      </tr>
 
-    <tr>
-      <td>Mon</td>
-      <td class="green">Networks</td>
-      <td class="brown">PRO Prac</td>
-      <td class="brown">PRO Prac</td>
-      <td>Math</td>
-      <td></td>
-      <td></td>
-    </tr>
+      <tr>
+        <td>Mon</td>
+        <td class="green">Networks</td>
+        <td class="brown">PRO Prac</td>
+        <td class="brown">PRO Prac</td>
+        <td>Math</td>
+        <td></td>
+        <td></td>
+      </tr>
 
-    <tr>
-      <td>Tue</td>
-      <td>Math</td>
-      <td>Math</td>
-      <td class="green">Networks</td>
-      <td class="blue">WebTech</td>
-      <td class="yellow">INS Prac</td>
-      <td class="yellow">INS Prac</td>
-    </tr>
+      <tr>
+        <td>Tue</td>
+        <td>Math</td>
+        <td>Math</td>
+        <td class="green">Networks</td>
+        <td class="blue">WebTech</td>
+        <td class="yellow">INS Prac</td>
+        <td class="yellow">INS Prac</td>
+      </tr>
 
-    <tr>
-      <td>Wed</td>
-      <td class="yellow">INS Theory</td>
-      <td>Math</td>
-      <td></td>
-      <td class="blue">WebTech</td>
-      <td class="brown">PRO</td>
-      <td></td>
-    </tr>
+      <tr>
+        <td>Wed</td>
+        <td class="yellow">INS Theory</td>
+        <td>Math</td>
+        <td></td>
+        <td class="blue">WebTech</td>
+        <td class="brown">PRO</td>
+        <td></td>
+      </tr>
 
-    <tr>
-      <td>Thu</td>
-      <td class="green">Networks</td>
-      <td class="yellow">INS Theory</td>
-      <td class="blue">WebTech Prac</td>
-      <td class="blue">WebTech Prac</td>
-      <td></td>
-      <td></td>
-    </tr>
+      <tr>
+        <td>Thu</td>
+        <td class="green">Networks</td>
+        <td class="yellow">INS Theory</td>
+        <td class="blue">WebTech Prac</td>
+        <td class="blue">WebTech Prac</td>
+        <td></td>
+        <td></td>
+      </tr>
 
-    <tr>
-      <td>Fri</td>
-      <td class="brown">PRO</td>
-      <td class="green">Networks</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
+      <tr>
+        <td>Fri</td>
+        <td class="brown">PRO</td>
+        <td class="green">Networks</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
+  </section>
 </section>
-
-<section id="contact">
-  <h1>Contact Me</h1>
-
-  <p>If you want to collaborate, build projects, or talk business:</p>
-
-  <p>Email: tebogo@email.com</p>
-  <p>GitHub: github.com/yourusername</p>
-  <p>Location: Cape Town, South Africa</p>
-
-</section>
-
-<footer>
-  <p>© 2026 Tebogo | Built with HTML & CSS</p>
-</footer>
-
-</body>
-</html>
