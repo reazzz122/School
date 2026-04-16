@@ -1,1 +1,22 @@
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
 
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1a008c;
+  color: white;
+}
+
+.green { background-color: #8bc34a; }
+.yellow { background-color: #ffc107; }
+.blue { background-color: #64b5f6; }
+.brown { background-color: #6d4c41; color: white; }
